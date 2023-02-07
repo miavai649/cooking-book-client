@@ -5,12 +5,9 @@ import Error from "../../Shared/Error/Error";
 
 export const Router = createBrowserRouter([
     {
-        path: '*',
-        element: <Error></Error>
-    },
-    {
         path: '/',
         element: <Main></Main>,
+        errorElement: <Error></Error>,
         children: [
             {
                 path: '/',
